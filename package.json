@@ -1,0 +1,27 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "nodemon server/src/main.js",
+    "build": "cd client && tsc && cd ../server && tsc",
+    "prod": "npm run build && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken":"^9.0.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.3"
+  }
+}
